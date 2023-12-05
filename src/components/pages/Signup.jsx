@@ -9,7 +9,9 @@ const Signup = () => {
   return (
     <div className={style.container}>
       <SignupContent />
-      <SignupForm submitHandler={submitHandler} />
+      <div className={style.hideMobile}>
+        <SignupForm submitHandler={submitHandler} />
+      </div>
     </div>
   );
 };

@@ -45,7 +45,10 @@ const testimonials = [
 const TestimonialsSection = () => {
   return (
     <div className={style.container}>
-      <p className={style.heading}>Testimonials</p>
+      <p className={style.heading}>
+        <img className={style.logoMobile} src={Logo} />
+        Testimonials
+      </p>
       <div className={style.content}>
         <img className={style.logo} src={Logo} />
         <div style={{ width: 800 }}>
