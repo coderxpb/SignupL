@@ -1,6 +1,7 @@
 .container {
   display: flex;
-  gap: 11px;
+  gap: 80px;
+  justify-content: space-between;
 }
 
 .info {
@@ -8,6 +9,7 @@
   flex-direction: column;
   gap: 16px;
   width: 322px;
+  min-width: 322px;
   color: #f2f2f2;
   text-align: left;
 

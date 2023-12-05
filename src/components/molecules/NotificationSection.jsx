@@ -8,7 +8,7 @@ import Slider from "react-slick";
 const settings = {
   dots: false,
   infinite: true,
-  slidesToShow: 2,
+  slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
   speed: 3000,
@@ -30,11 +30,12 @@ const NotificationSection = () => {
           or when a dormant whale you care about becomes active.
         </p>
       </div>
-      <div style={{ width: 404 }}>
+      <div style={{ width: 606 }}>
         <Slider {...settings}>
           <EmailNotificationCard disabled={true} initEmail="hello@gmail.com" />
           <MovementNotificationCard disabled={true} initChecked={true} />
           <DormantNotificationCard disabled={true} initChecked={true} />
+          <EmailNotificationCard disabled={true} initEmail="hello@gmail.com" />
         </Slider>
       </div>
     </div>

@@ -1,7 +1,9 @@
 .container {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 100%;
+  cursor: pointer;
 }
 
 .heading {
@@ -13,12 +15,16 @@
   color: #f2f2f2;
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e680;
+  margin-bottom: 40px;
+  margin-right: 62px;
 }
 
 .content {
   display: flex;
   align-items: flex-end;
   padding-bottom: 60px;
+  gap: 40px;
+  justify-content: space-between;
 }
 .logo {
   width: 60px;

@@ -48,7 +48,7 @@ const TestimonialsSection = () => {
       <p className={style.heading}>Testimonials</p>
       <div className={style.content}>
         <img className={style.logo} src={Logo} />
-        <div style={{ width: 700 }}>
+        <div style={{ width: 800 }}>
           <Slider {...settings}>
             {testimonials.map((t, i) => (
               <TestimonialCard

@@ -23,7 +23,7 @@ const EmailNotificationCard = (props) => {
 
         <div className={style.card_content}>
           <p className={style.card_content_desc}>
-            We&apos;ll be send notifications to you here
+            We&apos;ll be sending notifications to you here
           </p>
           <input
             className={style.card_content_input}
