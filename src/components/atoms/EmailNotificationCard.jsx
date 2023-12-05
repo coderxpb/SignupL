@@ -8,8 +8,8 @@ const EmailNotificationCard = (props) => {
     <div
       style={{
         background: "white",
-        width: "fit-content",
-        height: "fit-content",
+        width: 189.7,
+        height: 171.5,
         borderRadius: 8.4,
       }}
     >

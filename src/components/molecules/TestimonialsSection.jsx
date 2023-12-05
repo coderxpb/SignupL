@@ -1,6 +1,18 @@
 import style from "./TestimonialsSection.module.scss";
 import Logo from "../../assets/logo.svg";
 import TestimonialCard from "../atoms/TestimonialCard";
+import Slider from "react-slick";
+
+const settings = {
+  className: "slider variable-width",
+  dots: false,
+  infinite: true,
+  centerMode: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  variableWidth: true,
+  arrows: false,
+};
 
 const testimonials = [
   {
@@ -19,6 +31,16 @@ const testimonials = [
     desc: "Managing my own portfolio is helpful and well designed. What’s really interesting is watching the whales though. No one else has made whale tracking so simple.",
     large: true,
   },
+  {
+    name: "Piyush J",
+    position: "Research, Quartz Labs",
+    desc: "I use Loch everyday now. I can analyze crypto whale trends using it!",
+  },
+  {
+    name: "Rhea T",
+    position: "LFM PM",
+    desc: "Love how Loch integrates portfolio analytics and whale watching into one app.",
+  },
 ];
 const TestimonialsSection = () => {
   return (
@@ -26,16 +48,18 @@ const TestimonialsSection = () => {
       <p className={style.heading}>Testimonials</p>
       <div className={style.content}>
         <img className={style.logo} src={Logo} />
-        <div className={style.cards}>
-          {testimonials.map((t, i) => (
-            <TestimonialCard
-              key={"i" + i + t.name}
-              name={t.name}
-              position={t.position}
-              testimonial={t.desc}
-              large={t.large}
-            />
-          ))}
+        <div style={{ width: 700 }}>
+          <Slider {...settings}>
+            {testimonials.map((t, i) => (
+              <TestimonialCard
+                key={"i" + i + t.name}
+                name={t.name}
+                position={t.position}
+                testimonial={t.desc}
+                large={t.large}
+              />
+            ))}
+          </Slider>
         </div>
       </div>
     </div>

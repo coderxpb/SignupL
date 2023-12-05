@@ -5,7 +5,7 @@ import style from "./SignupContent.module.scss";
 
 const SignupContent = () => {
   return (
-    <div style={{ background: "black", width: "100vw" }}>
+    <div style={{ background: "black", width: "60%" }}>
       <div className={style.container}>
         <NotificationSection />
         <WatchSection />

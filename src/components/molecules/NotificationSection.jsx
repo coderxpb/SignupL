@@ -3,6 +3,19 @@ import BellIcon2 from "../../assets/icons/bell2.svg";
 import EmailNotificationCard from "../atoms/EmailNotificationCard";
 import MovementNotificationCard from "../atoms/MovementNotificationCard";
 import DormantNotificationCard from "../atoms/DormantNotificationCard";
+import Slider from "react-slick";
+
+const settings = {
+  dots: false,
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 3000,
+  autoplaySpeed: 3000,
+  cssEase: "linear",
+  arrows: false,
+};
 
 const NotificationSection = () => {
   return (
@@ -17,10 +30,12 @@ const NotificationSection = () => {
           or when a dormant whale you care about becomes active.
         </p>
       </div>
-      <div className={style.cards}>
-        <EmailNotificationCard disabled={true} initEmail="hello@gmail.com" />
-        <MovementNotificationCard disabled={true} initChecked={true} />
-        <DormantNotificationCard disabled={true} initChecked={true} />
+      <div style={{ width: 404 }}>
+        <Slider {...settings}>
+          <EmailNotificationCard disabled={true} initEmail="hello@gmail.com" />
+          <MovementNotificationCard disabled={true} initChecked={true} />
+          <DormantNotificationCard disabled={true} initChecked={true} />
+        </Slider>
       </div>
     </div>
   );
