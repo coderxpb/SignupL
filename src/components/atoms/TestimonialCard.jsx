@@ -1,9 +1,9 @@
 import "./TestimonialCard.scss";
 
 const TestimonialCard = (props) => {
-  const { name, position, testimonial } = props;
+  const { name, position, testimonial, large } = props;
   return (
-    <div className="card">
+    <div className="card" style={large ? { minWidth: 532 } : {}}>
       <div className="card-header">
         <span className="card-title">{name}</span>
         <span className="card-subtitle">{position}</span>

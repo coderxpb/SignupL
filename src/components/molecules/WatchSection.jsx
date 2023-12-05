@@ -6,7 +6,7 @@ const WatchSection = () => {
   return (
     <div className={style.container}>
       <div className={style.cards}>
-        <img src={Cohorts1} />
+        <img src={Cohorts1} className={style.image} />
       </div>
       <div className={style.info}>
         <img className={style.info_icon} src={Eye} />
