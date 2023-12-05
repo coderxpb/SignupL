@@ -3,9 +3,6 @@
   height: 136px;
   padding: 20px;
   border-radius: 12px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #1d2129;
 
   box-shadow: 0px 1px 1px 0px #0000000a;
   box-shadow: 0px 4px 10px 0px #0000000a;
@@ -16,20 +13,30 @@
     margin-bottom: 21.5px;
     text-align: left;
   }
+
   &-title {
     font-size: 16px;
     font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0px;
     color: #19191a;
   }
 
   &-subtitle {
+    margin-left: 8px;
+
     font-size: 13px;
     font-weight: 500;
     color: #96979a;
-    margin-left: 8px;
   }
 
   &-desc {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0px;
+    color: #1d2129;
     text-align: left;
+    margin: 0;
   }
 }

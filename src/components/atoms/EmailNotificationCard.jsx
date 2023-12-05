@@ -6,7 +6,14 @@ const EmailNotificationCard = (props) => {
   const { disabled, initEmail } = props;
 
   return (
-    <div style={{ background: "white", width: "fit-content", borderRadius: 8.4 }}>
+    <div
+      style={{
+        background: "white",
+        width: "fit-content",
+        height: "fit-content",
+        borderRadius: 8.4,
+      }}
+    >
       <div className={style.card}>
         <div className={style.card_header}>
           <span className={style.card_header_icon}>
