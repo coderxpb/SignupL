@@ -1,4 +1,3 @@
-import { useState } from "react";
 import style from "./EmailNotificationCard.module.scss";
 import BellIcon from "../../assets/icons/bell.svg";
 
