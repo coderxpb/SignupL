@@ -1,15 +1,11 @@
-import TestimonialCard from "./components/atoms/TestimonialCard";
 import "./App.css";
-import EmailNotificationCard from "./components/atoms/EmailNotificationCard";
-import MovementNotificationCard from "./components/atoms/MovementNotificationCard";
-import DormantNotificationCard from "./components/atoms/DormantNotificationCard";
-import SignupContent from "./components/organisms/SignupContent";
+import Signup from "./components/pages/Signup";
 
 function App() {
   return (
     <>
       <div>
-        <SignupContent />
+        <Signup />
       </div>
     </>
   );

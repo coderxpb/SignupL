@@ -18,9 +18,9 @@ const NotificationSection = () => {
         </p>
       </div>
       <div className={style.cards}>
-        <EmailNotificationCard />
-        <MovementNotificationCard />
-        <DormantNotificationCard />
+        <EmailNotificationCard disabled={true} initEmail="hello@gmail.com" />
+        <MovementNotificationCard disabled={true} initChecked={true} />
+        <DormantNotificationCard disabled={true} initChecked={true} />
       </div>
     </div>
   );
